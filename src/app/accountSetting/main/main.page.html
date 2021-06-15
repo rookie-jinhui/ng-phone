@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" defaultHref="" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Account Setting</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="as_content">
+  <ion-list class="as_list">
+    <ion-item detail [routerLink]="['/as-userId']">
+      <ion-label>User ID</ion-label>
+    </ion-item>
+    <ion-item detail lines="none" [routerLink]="['/as-password']">
+      <ion-label>Password</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" defaultHref="" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>System Maintenance / Upgrade Notice</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item lines="none" class="tips_content1">
+      <ion-img src="./assets/icon/upgrade2x.png"></ion-img>
+    </ion-item>
+    <ion-item lines="none" class="tips_content2">
+      <ion-text color="dark" class="tips_text">
+        MyZurich GI Insurance Customer eServices is current under system maintenance or upgrade and will resume service on [DD/MM/YYYY HH:MM].
+      </ion-text>
+    </ion-item>
+    <ion-item lines="none" class="tips_content2">
+      <ion-text color="dark" class="tips_text">
+        We apologize for any inconvenience caused and thank you for your understanding and continued support. For any assisance, please
+      </ion-text>
+    </ion-item>
+    <ion-item lines="none" class="tips_content2">
+      <ion-text color="dark" class="tips_text">
+        For any assisance, please <a [routerLink]="[ '/tabs' ]">contact us</a>.
+      </ion-text>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-button class="block_btn" [routerLink]="['/tabs']">
+        Home
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

@@ -1,9 +1,41 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content>
-
+  <img src="./assets/icon/login2x.png" alt="">
+  <div class="login_change">
+    <ion-segment value="EN" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="EN">
+        <ion-label>EN</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="中">
+        <ion-label>中</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  <ion-list>
+    <ion-item lines="none" class="login_item login_content1">
+      <ion-label><img class="img_input" src="./assets/icon/user.png" alt=""></ion-label>
+      <ion-input placeholder="User ID"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="login_item login_content2">
+      <ion-label><img class="img_input" src="./assets/icon/password.png" alt=""></ion-label>
+      <ion-input placeholder="Password"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="login_checkbox_label lc">
+      <ion-label>Remember my User ID</ion-label>
+      <ion-checkbox mode="ios" slot="start" class="login_checkbox"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  
+  <ion-button (click)="onLogin()" expand="block" class="login_btn">
+    Login
+  </ion-button>
+  <div class="login_div">
+    <span class="login_title">Help:</span>I forgot my <span class="login_router" [routerLink]="['/user-id']">User ID</span> or <span class="login_router" [routerLink]="['/password']">Password</span>
+  </div>
+  <div class="login_div">
+    <span class="login_title">No account?</span> <span class="login_router" [routerLink]="['/registerstep1']">Register now</span>
+  </div>
+    
+  
 </ion-content>

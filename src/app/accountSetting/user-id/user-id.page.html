@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" defaultHref="" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Change User ID</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="as_content">
+  <ion-list>
+    <div style="height:5.5rem;background:#F6F5F4;"></div>
+    <ion-item lines="none">
+      <ion-input required placeholder="New user ID" class="gray_input"></ion-input>
+    </ion-item>
+    <div style="height:2.5rem;background:#F6F5F4;"></div>
+    <ion-item lines="none">
+      <ion-input required placeholder="New password" class="gray_input"></ion-input>
+    </ion-item>
+    <div style="height:3.5rem;background:#F6F5F4;"></div>
+    <ion-item lines="none">
+      <ion-button class="block_btn" [routerLink]="['/as-tips']" [queryParams]="userId">
+        Save user ID
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

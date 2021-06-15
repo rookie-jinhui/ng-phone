@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" defaultHref="" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registration</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item lines="none" class="regis3_content1">
+      <ion-img src="./assets/icon/registerstep2x.png"></ion-img>
+    </ion-item>
+    <ion-item lines="none" class="regis3_content2">
+      <ion-input required placeholder="Create your user ID" class="gray_input register_input2"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="regis3_content3">
+      <ion-input required placeholder="Create a password" class="gray_input register_input2"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="regis3_content4">
+      <ion-input required placeholder="Confirm password" class="gray_input register_input2"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="regis3_content5">
+      <ion-button class="block_btn" [routerLink]="['/tabs']">
+        Next
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

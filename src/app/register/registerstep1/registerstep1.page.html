@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" defaultHref="" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registration</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="">
+  <ion-list>
+    <ion-item lines="none">
+      <ion-text color="primary" class="login_title">
+        MyZurich GI Customer eService gives you an easy, fast and convenient way to manage your policy.
+      </ion-text>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-img src="./assets/icon/register2x.png"></ion-img>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-input required placeholder="ID no./Passport no." class="gray_input register_input1"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="login_checkbox_label">
+      <ion-label>To show the ID no./Passport no.</ion-label>
+      <ion-checkbox mode="md" slot="start" class="login_checkbox"></ion-checkbox>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-input required placeholder="First Name" class="gray_input register_input2"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-input required placeholder="Last Name" class="gray_input register_input3"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-text color="dark" class="login_text">
+        Please choose a method to receive your activation link
+      </ion-text>
+    </ion-item>
+    <ion-item lines="none">
+      <div class="login_radio"><input type="radio" name="email" value="SMS" [(ngModel)]="userId.emailType">By SMS</div>
+      <div class="login_radio"><input type="radio" name="email" value="Email" [(ngModel)]="userId.emailType">By Email</div>     
+    </ion-item>
+    <ion-item lines="none">
+      <ion-input required placeholder="Enter your mobile number" class="gray_input register_input4"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="login_checkbox_label">
+      <ion-label class="register_label">I confirm that I have read and accept this terms and conditions of use.</ion-label>
+      <ion-checkbox mode="md" slot="start" class="login_checkbox"></ion-checkbox>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-button class="block_btn" [routerLink]="['/registerstep2']" [queryParams]="userId">
+        Next
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

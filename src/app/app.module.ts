@@ -13,9 +13,11 @@ import { HttpClientModule } from "@angular/common/http";
 //引入服务
 import { CommonService } from "./services/common.service";
 
+import { TipsComponent } from "./components/tips/tips.component";
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,TipsComponent],
   entryComponents: [], //配置不会在模板中使用的组件
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,HttpClientModule], //引入的模块 以来的模块
   providers: [CommonService,{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }], //配置服务

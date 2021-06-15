@@ -29,3 +29,66 @@
     text-align: center;
     padding: 20px 0;
 }
+
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,tbody,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    margin: 0;
+    padding: 0;
+}
+// html{
+//     font-size: 62.5%;
+// }
+.clearfix{
+    &::after{
+        display: block;
+        content:"";
+        height: 0px;
+        clear: both;
+    }
+}
+
+.login_title{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #3663AD;
+    font-weight: bold;
+    padding-top: 1.6rem;
+    padding-bottom: 1.2rem;
+}
+.login_checkbox{
+    --size: 1.4rem;
+    
+}
+.login_checkbox_label{
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    color: #8C8C8C;
+}
+.login_text{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.login_radio{
+    width: 50%;
+    text-align: center;
+    font-size: 1.4rem;
+    input{
+        margin-right: 1rem;
+    }
+}
+.gray_input{
+    width: 34.5rem;
+    height: 3.6rem;
+    --background: #EEEEEE;
+    border-radius: 1.8rem;
+    text-indent: 2rem;
+    font-size: 1.4rem;
+}
+.block_btn{
+    width: 34.5rem;
+    height: 4.4rem;
+    --background: #3663AD;
+    --border-radius: 1.8rem;
+    margin: 0;
+    font-size: 1.8rem;
+    margin-top: 3.8rem;
+}
